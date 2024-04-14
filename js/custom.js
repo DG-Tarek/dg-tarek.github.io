@@ -188,6 +188,13 @@ $(document).ready(function () {
 });
 
 (function ($) {
+    var cfg = {
+        scrollDuration: 1000, // smoothscroll duration
+        mailChimpURL: ''   // mailchimp url
+    },
+
+        $WIN = $(window);
+
     var ssMobileMenu = function () {
 
         var toggleButton = $('.header-menu-toggle'),
@@ -216,12 +223,26 @@ $(document).ready(function () {
         });
 
     };
+    var ssSmoothScroll = function () {
+
+        $('.smoothscroll').on('click', function (e) {
+            var target = this.hash,
+                $target = $(target);
+
+            e.preventDefault();
+            e.stopPropagation();
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, cfg.scrollDuration, 'swing', function () {
+                window.location.hash = target;
+            });
+
+        });
+    };
     (function ssInit() {
-
-
         ssMobileMenu();
-
-
+        ssSmoothScroll();
     })();
 
 
