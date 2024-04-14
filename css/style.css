@@ -273,7 +273,9 @@ nav li a {
 
 .bg-nav {
     background: #fff;
-    border-bottom: 1px solid #f3f3f3
+    border-bottom: 1px solid #f3f3f3;
+    height: max-content;
+
 }
 
 .bg-nav ul {
