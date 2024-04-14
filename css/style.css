@@ -243,11 +243,11 @@ body {
 
 .header-logo {
     display: inline-block;
-    position: absolute;
+    position: fixed;
     margin: 0;
     padding: 0;
-    left: 50px;
-    top: 50%;
+    left: 30px;
+    top: 30px;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -494,7 +494,7 @@ body {
 #home {
     background: url(../img/home-bg-2.jpg);
     background-size: cover;
-    height: 100vh;
+    height: 100%;
 }
 
 .table-cell {
