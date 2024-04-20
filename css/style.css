@@ -385,6 +385,12 @@ body {
 .header-nav {
     display: inline-block;
     list-style: none;
+
+}
+
+.site-logo {
+    width: 30px;
+    height: auto;
 }
 
 .header-nav li {
