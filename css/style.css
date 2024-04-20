@@ -366,8 +366,8 @@ body {
 
 .bg-nav {
     background: #fff;
-    height: 70px;
-    border-bottom: 2px solid #e8e7e7;
+    height: 60px;
+    border-bottom: 1px solid #e8e7e7;
 
 
 }
@@ -389,7 +389,7 @@ body {
 
 .header-nav li {
     display: inline-block;
-    padding: 25px 0;
+    padding: 20px 0;
     margin-right: 2rem;
     font-weight: bold;
     text-align: center;
@@ -494,7 +494,7 @@ body {
 #home {
     background: url(../img/home-bg-2.jpg);
     background-size: cover;
-    height: 100%;
+    height: 100vh;
 }
 
 .table-cell {
