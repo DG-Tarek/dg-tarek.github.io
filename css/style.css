@@ -1183,38 +1183,57 @@ fieldset {
     margin-left: 10%;
 }
 
+.button {
 
-
-#submit {
-    margin-top: 40px;
-    padding: 10px 40px;
-    height: 55px;
-    width: 100%;
-}
-
-.btn {
-    padding: 1em 2em;
-    box-shadow: .5em -.5em 0 -.125em #FFF, .5em -.5em #303F9F;
-    overflow: hidden;
-    position: relative;
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    font-family: 'Playfair Display', serif;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 24;
     letter-spacing: 1px;
-    font-weight: 600;
-    transition: .4s;
-    background: #303F9F;
-    color: #FFF;
-    border-radius: 0%;
+    border: 1.25px solid #363636;
 
+    /* Border color */
+    color: #363636;
+    /* Text color */
+    background-color: transparent;
+    /* Transparent background */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
-.btn:hover {
-    box-shadow: .25em .25em 0 -.125em #FFF, .25em .25em #303F9F;
+/* Hover and focus styles */
+.button:hover,
+.button:focus {
+    background-color: #303F9F;
+    /* Background color on hover/focus */
+    text-decoration: none;
     color: #fff;
+    /* Text color on hover/focus */
+    border-color: #303F9F;
+    /* Border color on hover/focus */
+}
+
+/* Active state styles */
+.button:active {
+    transform: translateY(1px);
+    /* Move the button down slightly when clicked */
+}
+
+
+.cv {
+    margin-top: 40px;
 
 }
 
+.send {
+    margin-top: 80px;
+    width: 100%;
+
+}
 
 @media (max-width: 991.98px) {
     #submit {
