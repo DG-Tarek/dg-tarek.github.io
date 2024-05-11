@@ -74,6 +74,7 @@ h4:before {
     border-radius: 50%;
     transition: scale .5s ease;
     pointer-events: none;
+    z-index: 2;
     /* So that the circle doesn't interfere with mouse events */
 }
 
@@ -1214,6 +1215,7 @@ fieldset {
     color: #fff;
     /* Text color on hover/focus */
     border-color: #303F9F;
+
     /* Border color on hover/focus */
 }
 
