@@ -507,6 +507,7 @@ body {
 .table-cell {
     display: table-cell;
     vertical-align: middle;
+    letter-spacing: 5px;
 }
 
 .disply-table {
@@ -888,6 +889,7 @@ body {
     overflow: hidden;
     display: block;
     margin-bottom: 30px;
+    border: 1px solid #cacaca;
 }
 
 .portfolio_item .portfolio_item_hover {
@@ -976,7 +978,8 @@ body {
 
 .portfolio_item img {
     -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    /* gray filter */
+    filter: grayscale(0%);
 }
 
 .portfolio-padding {
@@ -995,6 +998,10 @@ body {
 
 .popup-modal {
     background: #fff;
+}
+
+.popup-dialog {
+    border: 1.25px solid #60606e;
 }
 
 .close-popup-modal {
